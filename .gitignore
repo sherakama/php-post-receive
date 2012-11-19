@@ -1,0 +1,30 @@
+CHANGELOG.txt
+INSTALL.mysql.txt
+INSTALL.pgsql.txt
+INSTALL.txt
+LICENSE.txt
+MAINTAINERS.txt
+UPGRADE.txt
+# Numerous always-ignore extensions
+*.diff
+*.err
+*.orig
+*.log
+*.rej
+*.swo
+*.swp
+*.vi
+*~
+# OS or Editor folders
+.DS_Store
+.cache
+.project
+.settings
+.tmproj
+nbproject
+Thumbs.db
+# Folders to ignore
+.hg
+.svn
+.CVS
+cgi-bin

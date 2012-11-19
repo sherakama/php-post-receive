@@ -1,0 +1,31 @@
+# Domain: ons.ixm.ca
+# Public: /srv/www/git.post-receive.ixm.ca/public
+
+<VirtualHost *:80>
+
+        # Admin Email, Server Name, and Aliases
+        ServerAdmin     serveradmin@imagexmedia.com
+        ServerName      git.post-receive.ixm.ca
+
+        # Index File & Document Root
+        DirectoryIndex  post-receive.php
+        DocumentRoot    /srv/www/git.post-receive.ixm.ca/public
+
+        # SSL Certificates
+        # SSLEngine On
+        # SSLCertificateFile /etc/apache2/ssl/apache.pem
+        # SSLCertificateKeyFile /etc/apache2/ssl/apache.key
+
+        # Custom Log File Locations
+        LogLevel        warn
+        ErrorLog        /srv/www/git.post-receive.ixm.ca/logs/error.log
+        CustomLog       /srv/www/git.post-receive.ixm.ca/logs/access.log combined
+
+
+        # Enable Symlinks & .htaccess Usage
+        <Directory /srv/www/git.post-receive.ixm.ca/public>
+                Options FollowSymLinks
+                AllowOverride All
+        </Directory>
+
+</VirtualHost>
